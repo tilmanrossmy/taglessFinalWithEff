@@ -1,5 +1,5 @@
 import scalaz.Monad
-// you need this import to combine the dsl's in a for comprehension
+// you need this import to get flatMap
 import scalaz.syntax.monad._
 
 import scala.language.higherKinds
