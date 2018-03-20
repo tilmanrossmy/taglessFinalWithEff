@@ -7,7 +7,7 @@ import scala.language.higherKinds
 
 object TimeProgram  {
 
-  def program[F[_] : Monad]( conf: ConfDsl[F], time: TimeDsl[F]) = {
+  def program[F[_] : Monad](conf: ConfDsl[F], time: TimeDsl[F]) = {
     import conf._
     for {
       c <- getConf
